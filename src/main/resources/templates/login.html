@@ -11,7 +11,7 @@
 		
 			<div class="col-xs-4 col-xs-offset-4">	
 			
-				<form method="POST" action="/users/login" style="margin-top: 25px;">
+				<form method="POST" action="/login" style="margin-top: 25px;">
 				<div class="alert alert-danger" th:if="${error_msg}" >
 						<span class="glyphicon glyphicon-exclamation-sign" th:text="${error_msg}"></span> 
 					</div>
@@ -26,11 +26,10 @@
 					</div>
 					
 					<button type="submit" class="btn btn-success">Увійти</button>
-					<a href="/users/register" class="pull-right btn btn-link">Реєстрація</a>
+					<a href="/register" class="pull-right btn btn-link">Реєстрація</a>
 				</form>
 			</div>
 		</div>	
 	</div>
   </body>
 </html>
-

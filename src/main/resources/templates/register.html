@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-xs-offset-4">
-				<form method="POST" action="/users/register"  onsubmit="return validateRegistration(this);">
+				<form method="POST" action="/register"  onsubmit="return validateRegistration(this);">
 					<div class="alert alert-danger" role="alert" th:if="${errors != null}">
 					  <span th:each="err: ${errors}">
 					  	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -52,7 +52,7 @@
 					</div>
 					
 					<button type="submit" class="btn btn-success">Зареєструватись</button>
-					<a href="/users/login" class="pull-right btn btn-link">Вхід</a>
+					<a href="/login" class="pull-right btn btn-link">Вхід</a>
 				</form>
 			</div>
 		</div>	

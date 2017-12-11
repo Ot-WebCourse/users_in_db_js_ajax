@@ -3,7 +3,7 @@ function validateLogin(el) {
 	var loginText = el.value;
 	var loginBlock = login.parent(); // <div class="form-group">
 	
-	$.get("/users/exists", { login: loginText }).done(function (result) {
+	$.get("/exists", { login: loginText }).done(function (result) {
 		
 		if (result.exists) {
 			loginBlock.find('#loginHelpBlock').removeClass('hidden');
